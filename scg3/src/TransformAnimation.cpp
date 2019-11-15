@@ -21,7 +21,7 @@
  * limitations under the License.
  */
 
-#include "TransformAnimation.h"
+#include "../include/scg3/TransformAnimation.h"
 
 namespace scg {
 

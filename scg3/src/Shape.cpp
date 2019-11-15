@@ -21,12 +21,12 @@
  * limitations under the License.
  */
 
-#include "GeometryCore.h"
-#include "MaterialCore.h"
-#include "ShaderCore.h"
-#include "Shape.h"
-#include "TextureCore.h"
-#include "Traverser.h"
+#include "../include/scg3/GeometryCore.h"
+#include "../include/scg3/MaterialCore.h"
+#include "../include/scg3/ShaderCore.h"
+#include "../include/scg3/Shape.h"
+#include "../include/scg3/TextureCore.h"
+#include "../include/scg3/Traverser.h"
 
 namespace scg {
 

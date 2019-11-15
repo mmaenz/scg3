@@ -21,7 +21,7 @@
  * limitations under the License.
  */
 
-#include "Leaf.h"
+#include "../include/scg3/Leaf.h"
 
 namespace scg {
 

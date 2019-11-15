@@ -3,7 +3,7 @@ file(GLOB SOURCES
 	"${CMAKE_CURRENT_SOURCE_DIR}/extern/glew/src/*.c"
 	"${CMAKE_CURRENT_SOURCE_DIR}/extern/glm/glm/detail/*.cpp"
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
-	"${CMAKE_CURRENT_SOURCE_DIR}/src_ext/*.cpp")
+	"${CMAKE_CURRENT_SOURCE_DIR}/src/ext/*.cpp")
 
 # Set HEADERS variable
 file(GLOB HEADERS

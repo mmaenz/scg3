@@ -21,13 +21,13 @@
  * limitations under the License.
  */
 
-#include "Camera.h"
-#include "GeometryCore.h"
-#include "GeometryCoreFactory.h"
-#include "RenderState.h"
-#include "ShaderCore.h"
-#include "ShaderCoreFactory.h"
-#include "Traverser.h"
+#include "../include/scg3/Camera.h"
+#include "../include/scg3/GeometryCore.h"
+#include "../include/scg3/GeometryCoreFactory.h"
+#include "../include/scg3/RenderState.h"
+#include "../include/scg3/ShaderCore.h"
+#include "../include/scg3/ShaderCoreFactory.h"
+#include "../include/scg3/Traverser.h"
 
 namespace scg {
 

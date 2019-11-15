@@ -23,10 +23,10 @@
 
 #include <fstream>
 #include <stdexcept>
-#include "scg_internals.h"
-#include "ShaderCore.h"
-#include "ShaderCoreFactory.h"
-#include "scg_utilities.h"
+#include "../include/scg3/scg_internals.h"
+#include "../include/scg3/ShaderCore.h"
+#include "../include/scg3/ShaderCoreFactory.h"
+#include "../include/scg3/scg_utilities.h"
 
 namespace scg {
 

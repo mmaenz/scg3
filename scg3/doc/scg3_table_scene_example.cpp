@@ -1,6 +1,6 @@
 // scg3 table scene example application
 
-#include <scg3.h>
+#include <scg3/scg3.h>
 
 using namespace scg;
 

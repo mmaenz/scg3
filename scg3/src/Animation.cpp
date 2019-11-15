@@ -22,8 +22,8 @@
  */
 
 #include <ctime>
-#include "Animation.h"
-#include "scg_internals.h"
+#include "../include/scg3/Animation.h"
+#include "../include/scg3/scg_internals.h"
 
 namespace scg {
 

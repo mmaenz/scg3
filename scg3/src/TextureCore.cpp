@@ -22,8 +22,8 @@
  */
 
 #include <cassert>
-#include "RenderState.h"
-#include "TextureCore.h"
+#include "../include/scg3/RenderState.h"
+#include "../include/scg3/TextureCore.h"
 
 namespace scg {
 

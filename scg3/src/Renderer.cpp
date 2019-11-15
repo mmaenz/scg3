@@ -22,9 +22,9 @@
  */
 
 #include <cassert>
-#include "Node.h"
-#include "Renderer.h"
-#include "RenderState.h"
+#include "../include/scg3/Node.h"
+#include "../include/scg3/Renderer.h"
+#include "../include/scg3/RenderState.h"
 
 
 namespace scg {

@@ -21,7 +21,7 @@
  * limitations under the License.
  */
 
-#include "Core.h"
+#include "../include/scg3/Core.h"
 
 namespace scg {
 

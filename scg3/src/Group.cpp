@@ -24,11 +24,11 @@
 #include <cassert>
 #include <memory>
 #include <stdexcept>
-#include "Group.h"
-#include "MaterialCore.h"
-#include "ShaderCore.h"
-#include "TextureCore.h"
-#include "Traverser.h"
+#include "../include/scg3/Group.h"
+#include "../include/scg3/MaterialCore.h"
+#include "../include/scg3/ShaderCore.h"
+#include "../include/scg3/TextureCore.h"
+#include "../include/scg3/Traverser.h"
 
 namespace scg {
 

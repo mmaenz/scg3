@@ -23,12 +23,12 @@
 
 #include <cassert>
 #include <stdexcept>
-#include "BumpMapCore.h"
-#include "CubeMapCore.h"
-#include "scg_stb_image.h"
-#include "scg_utilities.h"
-#include "Texture2DCore.h"
-#include "TextureCoreFactory.h"
+#include "../include/scg3/BumpMapCore.h"
+#include "../include/scg3/CubeMapCore.h"
+#include "../include/scg3/scg_stb_image.h"
+#include "../include/scg3/scg_utilities.h"
+#include "../include/scg3/Texture2DCore.h"
+#include "../include/scg3/TextureCoreFactory.h"
 
 namespace scg {
 

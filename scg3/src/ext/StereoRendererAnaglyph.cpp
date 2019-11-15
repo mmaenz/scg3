@@ -1,5 +1,5 @@
 /**
- * \file StereoRendererActive.cpp
+ * \file StereoRendererAnaglyph.cpp
  *
  * \author Volker Ahlers\n
  *         volker.ahlers@hs-hannover.de
@@ -22,50 +22,44 @@
  */
 
 #include <cassert>
-#include "../src/scg_glew.h"
-#include <GLFW/glfw3.h>
-#include "../src/scg_utilities.h"
-#include "StereoRendererActive.h"
+#include "../../include/scg3/scg_glew.h"
+#include "../../include/scg3/scg_utilities.h"
+#include "../../include/scg3/ext/StereoRendererAnaglyph.h"
 
 namespace scg {
 
 
-StereoRendererActive::StereoRendererActive(RendererSP concreteRenderer)
+StereoRendererAnaglyph::StereoRendererAnaglyph(RendererSP concreteRenderer)
     : StereoRenderer(concreteRenderer) {
 }
 
 
-StereoRendererActive::~StereoRendererActive() {
+StereoRendererAnaglyph::~StereoRendererAnaglyph() {
 }
 
 
-StereoRendererActiveSP StereoRendererActive::create(RendererSP concreteRenderer) {
+StereoRendererAnaglyphSP StereoRendererAnaglyph::create(RendererSP concreteRenderer) {
   assert(concreteRenderer);
-  return std::make_shared<StereoRendererActive>(concreteRenderer);
+  return std::make_shared<StereoRendererAnaglyph>(concreteRenderer);
 }
 
 
-void StereoRendererActive::initViewer(Viewer* viewer, FrameBufferSize* frameBufferSize) {
-  assert(concreteRenderer_);
-  concreteRenderer_->initViewer(viewer, frameBufferSize);
-  glfwWindowHint(GLFW_STEREO, GL_TRUE);
-}
-
-
-void StereoRendererActive::render() {
+void StereoRendererAnaglyph::render() {
   assert(concreteRenderer_);
 
-  // left eye: enable left buffer, clear frame and depth buffers,
+  // left eye (red): disable green and blue color channels,
   // render scene using concrete renderer
-  glDrawBuffer(GL_BACK_LEFT);
-  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+  glColorMask(GL_TRUE, GL_FALSE, GL_FALSE, GL_TRUE);
   concreteRenderer_->render();
 
-  // right eye: enable right buffer, clear frame and depth buffers,
+  // right eye (cyan): clear depth buffer only, disable red color channel,
   // render scene using concrete renderer
-  glDrawBuffer(GL_BACK_RIGHT);
-  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+  glClear(GL_DEPTH_BUFFER_BIT);
+  glColorMask(GL_FALSE, GL_TRUE, GL_TRUE, GL_TRUE);
   concreteRenderer_->render();
+
+  // enable all color channels in order to clear the whole frame buffer
+  glColorMask(GL_TRUE, GL_TRUE, GL_TRUE, GL_TRUE);
 
   assert(!checkGLError());
 }

@@ -23,8 +23,8 @@
 
 #include <cassert>
 #include <sstream>
-#include "scg_internals.h"
-#include "scg_utilities.h"
+#include "../include/scg3/scg_internals.h"
+#include "../include/scg3/scg_utilities.h"
 
 namespace scg {
 

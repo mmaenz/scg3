@@ -23,10 +23,10 @@
  */
 
 #include <cassert>
-#include "CubeMapCore.h"
-#include "RenderState.h"
-#include "scg_utilities.h"
-#include "ShaderCore.h"
+#include "../include/scg3/CubeMapCore.h"
+#include "../include/scg3/RenderState.h"
+#include "../include/scg3/scg_utilities.h"
+#include "../include/scg3/ShaderCore.h"
 
 namespace scg {
 

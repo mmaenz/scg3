@@ -21,8 +21,8 @@
  * limitations under the License.
  */
 
-#include "scg_glm.h"
-#include "OrthographicCamera.h"
+#include "../include/scg3/scg_glm.h"
+#include "../include/scg3/OrthographicCamera.h"
 
 namespace scg {
 

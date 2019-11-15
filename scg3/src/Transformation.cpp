@@ -21,9 +21,9 @@
  * limitations under the License.
  */
 
-#include "RenderState.h"
-#include "Transformation.h"
-#include "Traverser.h"
+#include "../include/scg3/RenderState.h"
+#include "../include/scg3/Transformation.h"
+#include "../include/scg3/Traverser.h"
 
 namespace scg {
 

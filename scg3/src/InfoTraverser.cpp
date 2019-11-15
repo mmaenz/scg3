@@ -21,13 +21,13 @@
  * limitations under the License.
  */
 
-#include "InfoTraverser.h"
-#include "Camera.h"
-#include "Group.h"
-#include "Light.h"
-#include "LightPosition.h"
-#include "Shape.h"
-#include "Transformation.h"
+#include "../include/scg3/InfoTraverser.h"
+#include "../include/scg3/Camera.h"
+#include "../include/scg3/Group.h"
+#include "../include/scg3/Light.h"
+#include "../include/scg3/LightPosition.h"
+#include "../include/scg3/Shape.h"
+#include "../include/scg3/Transformation.h"
 
 namespace scg {
 

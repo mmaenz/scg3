@@ -22,10 +22,10 @@
  */
 
 #include <cassert>
-#include "Light.h"
-#include "RenderState.h"
-#include "Traverser.h"
-#include "scg_utilities.h"
+#include "../include/scg3/Light.h"
+#include "../include/scg3/RenderState.h"
+#include "../include/scg3/Traverser.h"
+#include "../include/scg3/scg_utilities.h"
 
 namespace scg {
 

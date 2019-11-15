@@ -21,8 +21,8 @@
  * limitations under the License.
  */
 
-#include "BumpMapCore.h"
-#include "scg_utilities.h"
+#include "../include/scg3/BumpMapCore.h"
+#include "../include/scg3/scg_utilities.h"
 
 namespace scg {
 

@@ -21,11 +21,11 @@
  * limitations under the License.
  */
 
-#include "scg_internals.h"
-#include "scg_utilities.h"
-#include "Light.h"
-#include "RenderState.h"
-#include "ShaderCore.h"
+#include "../include/scg3/scg_internals.h"
+#include "../include/scg3/scg_utilities.h"
+#include "../include/scg3/Light.h"
+#include "../include/scg3/RenderState.h"
+#include "../include/scg3/ShaderCore.h"
 
 namespace scg {
 

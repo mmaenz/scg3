@@ -21,8 +21,8 @@
  * limitations under the License.
  */
 
-#include "PerspectiveCamera.h"
-#include "scg_glm.h"
+#include "../include/scg3/PerspectiveCamera.h"
+#include "../include/scg3/scg_glm.h"
 
 namespace scg {
 

@@ -22,12 +22,12 @@
  */
 
 #include <iostream>
-#include "scg_glew.h"
+#include "../include/scg3/scg_glew.h"
 #include <GLFW/glfw3.h>
-#include "Camera.h"
-#include "KeyboardController.h"
-#include "scg_glm.h"
-#include "ViewState.h"
+#include "../include/scg3/Camera.h"
+#include "../include/scg3/KeyboardController.h"
+#include "../include/scg3/scg_glm.h"
+#include "../include/scg3/ViewState.h"
 
 namespace scg {
 

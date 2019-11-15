@@ -22,7 +22,7 @@
  */
 
 #include "LightPosition.h"
-#include "Traverser.h"
+#include "../include/scg3/Traverser.h"
 
 namespace scg {
 

@@ -26,7 +26,7 @@
 #define STEREORENDERERPASSIVE_H_
 
 #include <string>
-#include "../src/scg_internals.h"
+#include "../scg_internals.h"
 #include "scg_ext_internals.h"
 #include "StereoRenderer.h"
 

@@ -25,7 +25,7 @@
 #ifndef STEREORENDERERANAGLYPH_H_
 #define STEREORENDERERANAGLYPH_H_
 
-#include "../src/scg_internals.h"
+#include "../scg_internals.h"
 #include "scg_ext_internals.h"
 #include "StereoRenderer.h"
 

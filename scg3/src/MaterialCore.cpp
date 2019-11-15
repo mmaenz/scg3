@@ -23,9 +23,9 @@
 
 #include <cassert>
 #include <cstring>
-#include "MaterialCore.h"
-#include "RenderState.h"
-#include "scg_utilities.h"
+#include "../include/scg3/MaterialCore.h"
+#include "../include/scg3/RenderState.h"
+#include "../include/scg3/scg_utilities.h"
 
 namespace scg {
 

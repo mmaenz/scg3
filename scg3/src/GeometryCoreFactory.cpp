@@ -25,9 +25,9 @@
 #include <fstream>
 #include <sstream>
 #include <stdexcept>
-#include "GeometryCore.h"
-#include "GeometryCoreFactory.h"
-#include "scg_utilities.h"
+#include "../include/scg3/GeometryCore.h"
+#include "../include/scg3/GeometryCoreFactory.h"
+#include "../include/scg3/scg_utilities.h"
 
 namespace scg {
 

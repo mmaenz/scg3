@@ -24,9 +24,9 @@
 #include <cfloat>
 #include <iomanip>
 #include <iostream>
-#include "scg_glew.h"
+#include "../include/scg3/scg_glew.h"
 #include <GLFW/glfw3.h>
-#include "ViewState.h"
+#include "../include/scg3/ViewState.h"
 
 namespace scg {
 

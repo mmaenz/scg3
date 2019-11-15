@@ -25,12 +25,12 @@
 #include <iostream>
 #include <sstream>
 #include <stdexcept>
-#include "scg_glew.h"
+#include "../include/scg3/scg_glew.h"
 #include <GLFW/glfw3.h>
-#include "RenderState.h"
-#include "scg_internals.h"
-#include "scg_utilities.h"
-#include "ShaderCore.h"
+#include "../include/scg3/RenderState.h"
+#include "../include/scg3/scg_internals.h"
+#include "../include/scg3/scg_utilities.h"
+#include "../include/scg3/ShaderCore.h"
 
 namespace scg {
 

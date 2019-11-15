@@ -22,9 +22,9 @@
  */
 
 #include <cassert>
-#include "Composite.h"
-#include "Core.h"
-#include "Node.h"
+#include "../include/scg3/Composite.h"
+#include "../include/scg3/Core.h"
+#include "../include/scg3/Node.h"
 
 namespace scg {
 

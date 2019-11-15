@@ -21,8 +21,8 @@
  * limitations under the License.
  */
 
-#include "../src/RenderState.h"
-#include "StereoCamera.h"
+#include "../../include/scg3/RenderState.h"
+#include "../../include/scg3/ext/StereoCamera.h"
 
 namespace scg {
 

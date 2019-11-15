@@ -22,7 +22,7 @@
  */
 
 #include <cassert>
-#include "Composite.h"
+#include "../include/scg3/Composite.h"
 
 namespace scg {
 

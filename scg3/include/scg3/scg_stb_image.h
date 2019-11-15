@@ -1,15 +1,13 @@
 /**
- * \file scg3_ext.h
- * \brief Main header file for scg3 scene graph library extensions, including all class headers.
- *
- * Requires C++11 and OpenGL 3.2 (or later versions).
+ * \file scg_stb_image.h
+ * \brief Local header file for stb_image library.
  *
  * \author Volker Ahlers\n
  *         volker.ahlers@hs-hannover.de
  */
 
 /*
- * Copyright 2014-2019 Volker Ahlers
+ * Copyright 2014 Volker Ahlers
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,14 +22,11 @@
  * limitations under the License.
  */
 
-#ifndef SCG3_EXT_H_
-#define SCG3_EXT_H_
+#ifndef SCG_STB_IMAGE_H_
+#define SCG_STB_IMAGE_H_
 
-#include "src_ext/scg_ext_internals.h"
-#include "src_ext/StereoCamera.h"
-#include "src_ext/StereoRenderer.h"
-#include "src_ext/StereoRendererActive.h"
-#include "src_ext/StereoRendererAnaglyph.h"
-#include "src_ext/StereoRendererPassive.h"
 
-#endif /* SCG3_EXT_H_ */
+#include "../stb_image/stb_image.h"
+
+
+#endif /* SCG_STB_IMAGE_H_ */

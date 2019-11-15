@@ -22,14 +22,14 @@
  */
 
 #include <sstream>
-#include "Camera.h"
-#include "Node.h"
-#include "InfoTraverser.h"
-#include "PreTraverser.h"
-#include "RenderState.h"
-#include "RenderTraverser.h"
-#include "StandardRenderer.h"
-#include "Viewer.h"
+#include "../include/scg3/Camera.h"
+#include "../include/scg3/Node.h"
+#include "../include/scg3/InfoTraverser.h"
+#include "../include/scg3/PreTraverser.h"
+#include "../include/scg3/RenderState.h"
+#include "../include/scg3/RenderTraverser.h"
+#include "../include/scg3/StandardRenderer.h"
+#include "../include/scg3/Viewer.h"
 
 namespace scg {
 

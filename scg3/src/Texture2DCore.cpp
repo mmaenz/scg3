@@ -22,9 +22,9 @@
  */
 
 #include <cassert>
-#include "RenderState.h"
-#include "scg_utilities.h"
-#include "Texture2DCore.h"
+#include "../include/scg3/RenderState.h"
+#include "../include/scg3/scg_utilities.h"
+#include "../include/scg3/Texture2DCore.h"
 
 namespace scg {
 

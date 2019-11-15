@@ -1,6 +1,6 @@
 /**
- * \file StereoRendererActive.h
- * \brief A renderer for active stereo (e.g., shutter glasses).
+ * \file StereoRenderer.h
+ * \brief Base class for all stereo renderers (abstract).
  *
  * \author Volker Ahlers\n
  *         volker.ahlers@hs-hannover.de
@@ -22,23 +22,22 @@
  * limitations under the License.
  */
 
-#ifndef STEREORENDERERACTIVE_H_
-#define STEREORENDERERACTIVE_H_
+#ifndef STEREORENDERER_H_
+#define STEREORENDERER_H_
 
 #include <string>
-#include "../src/scg_internals.h"
-#include "scg_ext_internals.h"
-#include "StereoRenderer.h"
+#include "../Renderer.h"
+#include "../scg_internals.h"
 
 namespace scg {
 
 
 /**
- * \brief A renderer for active stereo (e.g., shutter glasses).
+ * \brief Base class for all stereo renderers (abstract).
  *
  * Decorator pattern, render() calls concreteRenderer->render().
  */
-class StereoRendererActive: public StereoRenderer {
+class StereoRenderer: public Renderer {
 
 public:
 
@@ -47,23 +46,20 @@ public:
    *
    * \param concreteRenderer concrete renderer to be called by render() (decorator pattern)
    */
-  StereoRendererActive(RendererSP concreteRenderer);
+  StereoRenderer(RendererSP concreteRenderer);
 
   /**
    * Destructor.
    */
-  virtual ~StereoRendererActive();
+  virtual ~StereoRenderer() = 0;
 
   /**
-   * Create shared pointer.
-   *
-   * \param concreteRenderer concrete renderer to be called by render() (decorator pattern)
+   * Initialize render state after an OpenGL context has been created.
    */
-  static StereoRendererActiveSP create(RendererSP concreteRenderer);
+  virtual void initRenderState();
 
   /**
    * Initialize viewer properties before an OpenGL context has been created.
-   * Request stereo framebuffer.
    *
    * \param viewer viewer that uses the renderer
    * \param frameBufferSize frame buffer size to be used by viewer to create OpenGL context
@@ -72,14 +68,24 @@ public:
   virtual void initViewer(Viewer* viewer, FrameBufferSize* frameBufferSize);
 
   /**
-   * Render the scene, called by Viewer::startMainLoop().
-   * Calls concreteRenderer->render().
+   * Get information about the scene graph (e.g., number of triangles).
+   * Calls concreteRenderer_->getInfo().
    */
-  virtual void render();
+  virtual std::string getInfo();
+
+  /**
+   * Render the scene, called by Viewer::startMainLoop().
+   * Should call concreteRenderer->render().
+   */
+  virtual void render() = 0;
+
+protected:
+
+  RendererSP concreteRenderer_;
 
 };
 
 
 } /* namespace scg */
 
-#endif /* STEREORENDERERACTIVE_H_ */
+#endif /* STEREORENDERER_H_ */

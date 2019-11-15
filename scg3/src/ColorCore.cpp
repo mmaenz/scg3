@@ -21,8 +21,8 @@
  * limitations under the License.
  */
 
-#include "ColorCore.h"
-#include "RenderState.h"
+#include "../include/scg3/ColorCore.h"
+#include "../include/scg3/RenderState.h"
 
 namespace scg {
 

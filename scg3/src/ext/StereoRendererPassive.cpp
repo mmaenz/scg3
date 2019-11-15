@@ -22,9 +22,9 @@
  */
 
 #include <cassert>
-#include "../src/scg_glew.h"
-#include "../src/scg_utilities.h"
-#include "StereoRendererPassive.h"
+#include "../../include/scg3/scg_glew.h"
+#include "../../include/scg3/scg_utilities.h"
+#include "../../include/scg3/ext/StereoRendererPassive.h"
 
 namespace scg {
 

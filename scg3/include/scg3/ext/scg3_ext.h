@@ -1,12 +1,15 @@
 /**
- * \file Controller.cpp
+ * \file scg3_ext.h
+ * \brief Main header file for scg3 scene graph library extensions, including all class headers.
+ *
+ * Requires C++11 and OpenGL 3.2 (or later versions).
  *
  * \author Volker Ahlers\n
  *         volker.ahlers@hs-hannover.de
  */
 
 /*
- * Copyright 2014 Volker Ahlers
+ * Copyright 2014-2019 Volker Ahlers
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,17 +24,14 @@
  * limitations under the License.
  */
 
-#include "../include/scg3/Controller.h"
+#ifndef SCG3_EXT_H_
+#define SCG3_EXT_H_
 
-namespace scg {
+#include "scg_ext_internals.h"
+#include "StereoCamera.h"
+#include "StereoRenderer.h"
+#include "StereoRendererActive.h"
+#include "StereoRendererAnaglyph.h"
+#include "StereoRendererPassive.h"
 
-
-Controller::Controller() {
-}
-
-
-Controller::~Controller() {
-}
-
-
-} /* namespace scg */
+#endif /* SCG3_EXT_H_ */

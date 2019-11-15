@@ -1,6 +1,6 @@
 /**
- * \file scg_stb_image.h
- * \brief Local header file for stb_image library.
+ * \file scg_ext_internals.h
+ * \brief Internal definitions required by most classes.
  *
  * \author Volker Ahlers\n
  *         volker.ahlers@hs-hannover.de
@@ -22,11 +22,29 @@
  * limitations under the License.
  */
 
-#ifndef SCG_STB_IMAGE_H_
-#define SCG_STB_IMAGE_H_
+
+#ifndef SCG_EXT_INTERNALS_H_
+#define SCG_EXT_INTERNALS_H_
+
+#include "../scg_internals.h"
+
+namespace scg {
 
 
-#include "../extern/stb_image/stb_image.h"
+/**
+ * Forward declaration of classes with shared and unique pointers.\n
+ *   Class\n
+ *   ClassSP - shared_pointer<Class>\n
+ *   classUP - unique_pointer<Class>
+ */
+SCG_DECLARE_CLASS(StereoCamera);
+SCG_DECLARE_CLASS(StereoRenderer);
+SCG_DECLARE_CLASS(StereoRendererActive);
+SCG_DECLARE_CLASS(StereoRendererAnaglyph);
+SCG_DECLARE_CLASS(StereoRendererPassive);
 
 
-#endif /* SCG_STB_IMAGE_H_ */
+} /* namespace scg */
+
+
+#endif /* SCG_EXT_INTERNALS_H_ */

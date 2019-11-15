@@ -21,8 +21,8 @@
  * limitations under the License.
  */
 
-#include "Camera.h"
-#include "CameraController.h"
+#include "../include/scg3/Camera.h"
+#include "../include/scg3/CameraController.h"
 
 namespace scg {
 
