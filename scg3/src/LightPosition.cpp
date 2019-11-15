@@ -21,7 +21,7 @@
  * limitations under the License.
  */
 
-#include "LightPosition.h"
+#include "../include/scg3/LightPosition.h"
 #include "../include/scg3/Traverser.h"
 
 namespace scg {

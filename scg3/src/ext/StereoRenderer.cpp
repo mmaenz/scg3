@@ -22,7 +22,7 @@
  */
 
 #include <cassert>
-#include "../include/scg3/ext/StereoRenderer.h"
+#include "../../include/scg3/ext/StereoRenderer.h"
 
 namespace scg {
 
