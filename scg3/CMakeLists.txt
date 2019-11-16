@@ -34,7 +34,7 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
     "Debug" "Release" "MinSizeRel" "RelWithDebInfo")
 endif()
 
-# Set PUBLIC_HEADERS variable
+# Set HEADERS variable
 file(GLOB_RECURSE HEADERS
 	"${CMAKE_CURRENT_SOURCE_DIR}/include/*.h"
 	"${CMAKE_CURRENT_SOURCE_DIR}/include/*.hpp"
