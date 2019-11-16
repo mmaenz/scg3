@@ -221,7 +221,7 @@
  */
 
 #include "scg_glew.h"
-#include "<GLFW/glfw3.h>
+#include <GLFW/glfw3.h>
 
 #include "Animation.h"
 #include "BumpMapCore.h"
