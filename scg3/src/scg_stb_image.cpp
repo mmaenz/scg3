@@ -24,4 +24,4 @@
 
 // create stb_image implementation
 #define STB_IMAGE_IMPLEMENTATION
-#include "../include/stb_image/stb_image.h"
+#include "../include/scg3/stb_image/stb_image.h"

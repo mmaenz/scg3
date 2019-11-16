@@ -38,7 +38,7 @@
 #ifndef GLEW_INCLUDE
 // <VA> include local header file
 //#include <GL/glew.h>
-#include "../../include/GL/glew.h"
+#include "../../include/scg3/GL/glew.h"
 #else
 #include GLEW_INCLUDE
 #endif
@@ -49,7 +49,7 @@
 #elif defined(GLEW_EGL)
 // <VA> include local header file
 //#  include <GL/eglew.h>
-#  include <../../include/GL/eglew.h>
+#  include <../../include/scg3/GL/eglew.h>
 #elif defined(_WIN32)
 /*
  * If NOGDI is defined, wingdi.h won't be included by windows.h, and thus
@@ -61,11 +61,11 @@
 #  endif
 // <VA> include local header file
 //#  include <GL/wglew.h>
-#  include <../../include/GL/wglew.h>
+#  include <../../include/scg3/GL/wglew.h>
 #elif !defined(__ANDROID__) && !defined(__native_client__) && !defined(__HAIKU__) && (!defined(__APPLE__) || defined(GLEW_APPLE_GLX))
 // <VA> include local header file
 //#  include <GL/glxew.h>
-#  include <../../include/GL/glxew.h>
+#  include <../../include/scg3/GL/glxew.h>
 #endif
 
 #include <stddef.h>  /* For size_t */

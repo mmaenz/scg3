@@ -36,14 +36,14 @@
 #undef GLM_MESSAGES
 #endif
 
-#include "../glm/glm.hpp"
-#include "../glm/gtc/matrix_transform.hpp"
-#include "../glm/gtc/quaternion.hpp"
-#include "../glm/gtc/type_ptr.hpp"
+#include "glm/glm.hpp"
+#include "glm/gtc/matrix_transform.hpp"
+#include "glm/gtc/quaternion.hpp"
+#include "glm/gtc/type_ptr.hpp"
 
 // include glm::toString() functions for debugging purposes
 #define GLM_ENABLE_EXPERIMENTAL
-#include "../glm/gtx/string_cast.hpp"
+#include "glm/gtx/string_cast.hpp"
 #undef GLM_ENABLE_EXPERIMENTAL
 
 #if defined(__GNUC__)

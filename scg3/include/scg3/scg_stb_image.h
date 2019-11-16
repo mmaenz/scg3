@@ -26,7 +26,7 @@
 #define SCG_STB_IMAGE_H_
 
 
-#include "../stb_image/stb_image.h"
+#include "stb_image/stb_image.h"
 
 
 #endif /* SCG_STB_IMAGE_H_ */

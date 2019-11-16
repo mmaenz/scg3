@@ -31,6 +31,6 @@
 #define GLEW_STATIC
 #endif
 
-#include "../GL/glew.h"
+#include "GL/glew.h"
 
 #endif /* SCG_GLEW_H_ */
