@@ -11,7 +11,7 @@ set(LIBRARY_FOLDER scg3)
 set(CMAKE_CXX_STANDARD 11)
 
 # Library sources
-add_subdirectory (scg3)
+add_subdirectory (libscg3)
 
 # Example
 #add_subdirectory (scg3_example)
