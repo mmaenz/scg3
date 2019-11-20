@@ -27,7 +27,10 @@
 #include <iostream>
 #include <stdexcept>
 #include <vector>
-#include <scg3/scg3.h>
+// As static library
+#include "../libscg3/include/scg3/scg3.h"
+// As library after "make install"
+//#include <scg3/scg3.h>
 
 using namespace scg;
 

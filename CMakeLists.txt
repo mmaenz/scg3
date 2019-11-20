@@ -14,4 +14,4 @@ set(CMAKE_CXX_STANDARD 11)
 add_subdirectory (libscg3)
 
 # Example
-#add_subdirectory (scg3_example)
+add_subdirectory (example)

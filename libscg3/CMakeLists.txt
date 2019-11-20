@@ -47,6 +47,10 @@ file(GLOB_RECURSE SOURCES
 	"${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
 )
 
+# Prerequisite glfw3
+find_package(PkgConfig REQUIRED)
+find_package(glfw3 REQUIRED)
+
 # Target
 add_library(${LIBRARY_NAME} ${LIBRARY_TYPE} ${SOURCES} ${HEADERS})
 target_compile_options(${LIBRARY_NAME} PUBLIC "-DGLEW_STATIC")
@@ -59,7 +63,6 @@ elseif()
 	find_package(OpenGL REQUIRED)
 	find_package(GLUT REQUIRED)
 	find_package(X11 REQUIRED)
-	find_package(glfw3 REQUIRED)
 	# Libraries
 	set(LIBS ${OPENGL_LIBRARIES} ${GLFW_LIBRARIES} ${X11_LIBRARIES} ${GLUT_LIBRARY} glfw Xrandr Xxf86vm)
 endif()
