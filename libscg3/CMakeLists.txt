@@ -18,9 +18,11 @@ set(INSTALL_INCLUDE_DIR include
 option(BUILD_SHARED_LIBS "Build ${_PN} as a shared library." ON)
 if(BUILD_SHARED_LIBS)
   set(LIBRARY_TYPE SHARED)
+  set_property(GLOBAL PROPERTY library_type "shared")
   message(STATUS "Building as shared library.")
 else()
   set(LIBRARY_TYPE STATIC)
+  set_property(GLOBAL PROPERTY library_type "static")
   message(STATUS "Building as static library.")
 endif()
 
